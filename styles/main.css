@@ -7,7 +7,7 @@
 body {
     background: #b3dbe8;
     color: #000;
-    font-family: sans-serif; /*   add fonts here   */
+    font-family: "PT Sans Caption", Arial, sans-serif; /*   add fonts here   */
     font-size: 100%; /* DO NOT change */
     margin: 0; /* DO NOT change */
 }
@@ -18,21 +18,21 @@ body {
     auto centers a block element regardless of width of device
     when using auto, combine it with max-width
     */
+
 #container {
     max-width: 1280px;
     margin: 2% auto;
 }
 
 article {
-    width: 55%;
+    max-width: 400px;
     float: left;
     padding: 2em;
     background: #eaeaea;
 }
 
 aside {
-    width: 43%;
-    margin-left: 2%;
+    max-width: 400px;
     float: left;
     padding: 2em;
     background: #0287b3;
@@ -41,14 +41,13 @@ aside {
 
 #sidebar2 {
     background: #006080;
-    margin-top: 2%;
 }
 
 /* headings and text */
 
 h1, h2 {
     margin: 0;
-    font-family: serif;  /*   add fonts here   */
+    font-family: 'Merriweather', Georgia, serif;
 }
 
 article h1 {
@@ -111,3 +110,12 @@ aside a:focus, aside a:hover {
 }
 
 /* media queries */
+@media (max-width: 600px) {
+  body { margin: 0;}
+  #container {border-width: 0;}
+  aside { margin: 0;}
+  #top-image-container {display: none}
+
+
+
+}
